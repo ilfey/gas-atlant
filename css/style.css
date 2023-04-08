@@ -1,0 +1,21 @@
+html,
+body {
+    height: 100%;
+    font-size: 16px;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {}
+
+.header {}
+
+.main {
+    flex: 1 1 auto;
+}
+
+.footer {}
