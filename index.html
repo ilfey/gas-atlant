@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -17,16 +17,62 @@
 
     <!-- HEADER -->
 
-    <header class="header container">
-      <div class="header__logo-container">
-        <img class="logo" src="/img/ic_logo.svg" alt="Логотип">
-        <div class="vl"></div>
-        <span class="logo__description">Расправь плечи в теплом доме</span>
+    <header class="header">
+
+      <!-- HEADER TOP -->
+
+      <div class="header-top container">
+        <div class="logo-container">
+          <img class="logo" src="/img/ic_logo.svg" alt="Логотип">
+          <div class="delimiter logo-delimiter"></div>
+          <span class="logo-description">Расправь плечи в теплом доме</span>
+        </div>
+
+        <div class="contacts">
+          <a class="phone">+7 926 330-68-34</a>
+          <a class="link" href="#">Срочный вопрос</a>
+        </div>
       </div>
 
-      <div class="header__contacts">
-        <a class="phone">+7 926 330-68-34</a>
-        <a class="link" href="#">Срочный вопрос</a>
+      <img class="sublogo" src="/img/logo_description.svg" alt="Описание логотипа">
+
+      <!-- HEADER BOTTOM -->
+
+      <div class="header-bottom container">
+        <div class="qualities-container">
+          <div class="quality">
+
+            <!-- FIRST QUALITY -->
+
+            <div class="quality__logos-container">
+              <img class="quality__logo" src="/img/ic_moon.svg" alt="Луна">
+              <img class="quality__arrow" src="/img/ic_arrow.svg" alt="Стрелка">
+              <img class="quality__logo" src="/img/ic_sun.svg" alt="Солнце">
+            </div>
+            <p class="quality__description">В любое время дня и ночи</p>
+          </div>
+
+          <!-- SECOND QUALITY -->
+
+          <div class="quality">
+            <div class="quality__logos-container">
+              <img class="quality__logo" src="/img/ic_cloudy.svg" alt="Погода">
+              <img class="quality__arrow" src="/img/ic_arrow.svg" alt="Стрелка">
+              <img class="quality__logo" src="/img/ic_snowflake.svg" alt="Снежинка">
+            </div>
+            <p class="quality__description">Вне зависимости от погодных условий</p>
+          </div>
+        </div>
+
+        <h1 class="title">Доставим газ за 4 часа</h1>
+        <h3 class="subtitle">в любую точку Москвы и Московской области</h3>
+
+        <div class="button-delivery-container">
+          <a class="button button-delivery" href="#">
+            <span class="button__text">Заказать доставку газа в газгольдер</span>
+          </a>
+          <p class="button-delivery-description">Доставка газа всегда по актальным ценам</p>
+        </div>
       </div>
     </header>
 
@@ -34,31 +80,323 @@
 
     <main class="main">
 
-      <section class="section">
-        <div class="qualities-container">
-          <div class="quality">
-            <div class="quality__logos-container">
-              <img class="quality__logo" src="/img/ic_moon.svg" alt="луна">
-              <img class="quality__arrow" src="/img/ic_arrow.svg" alt="стрелка">
-              <img class="quality__logo" src="/img/ic_sun.svg" alt="солнце">
-            </div>
-            <p class="quality__description">В любое время дня и ночи</p>
+      <!-- PRICE SECTION -->
+
+      <section class="section container price-section">
+        <h2 class="section__title">Стоимость газа в ваш газгольдер сегодня</h2>
+        <div class="section__content">
+
+          <!-- FIRST PRICE CARD -->
+
+          <div class="price-card price-card-propane">
+            <h2 class="price-card__title">Пропан</h2>
+            <h3 class="price-card__subtitle">от 25 рублей за литр</h3>
+            <p class="price-card__description">
+              Физически испарение происходит до -40 градусов, что позволяет
+              использовать его в наших с вами погодных условиях
+            </p>
+            <a href="#" class="simple-button price-card__button">Заказать</a>
           </div>
-          <div class="quality">
-            <div class="quality__logos-container">
-              <img class="quality__logo" src="/img/ic_cloudy.svg" alt="погода">
-              <img class="quality__arrow" src="/img/ic_arrow.svg" alt="стрелка">
-              <img class="quality__logo" src="/img/ic_snowflake.svg" alt="снежинка">
+
+          <!--  CARD RATIO -->
+
+          <div class="card-ratios">
+            <p class="card-ratios__title">Идеальное соотношение</p>
+            <div class="card-ratios__container">
+
+              <!-- FIRST CARD RATIO -->
+
+              <div class="card-ratios__container__ratio">
+                <h2 class="card-ratios__container__ratio__value">80%</h2>
+                <span class="card-ratios__container__ratio__title">пропана</span>
+              </div>
+
+              <div class="delimiter ratios-delimiter"></div>
+
+              <!-- SECOND CARD RATIO -->
+
+              <div class="card-ratios__container__ratio">
+                <h2 class="card-ratios__container__ratio__value">20%</h2>
+                <span class="card-ratios__container__ratio__title">бутана</span>
+              </div>
             </div>
-            <p class="quality__description">Вне зависимости от погодных условий</p>
+          </div>
+
+          <!-- SECOND PRICE CARD -->
+
+          <div class="price-card price-card-butane">
+            <h2 class="price-card__title">Бутан</h2>
+            <h3 class="price-card__subtitle">от 16 рублей за литр</h3>
+            <p class="price-card__description">
+              Испарение Бутана происходит только до 0 градусов и годится для
+              использования в тёплое время года
+            </p>
+            <a href="#" class="simple-button price-card__button">Заказать</a>
+          </div>
+
+        </div>
+
+        <img class="arrow-bottom" src="/img/ic_arrow_bottom.svg" alt="Стелка вниз">
+
+      </section>
+
+      <!-- ADVANTAGES SECTION -->
+
+      <section class="section container section-advantages">
+        <h2 class="section__title">Преимущества работы с нашей компанией</h2>
+        <div class="section__content">
+          <div class="advantages-container">
+
+            <div class="advantage">
+              <img class="advantage__image" src="/img/tank.png" alt="цистерна">
+              <h3 class="advantage__title">Экономия <br> на хранилище</h3>
+              <p class="advantage__description">за счёт собственных цистерн <br> на нашей базе</p>
+            </div>
+
+            <div class="advantage">
+              <img class="advantage__image" src="/img/track.png" alt="грузовик">
+              <h3 class="advantage__title">Экономия <br> на транспорте</h3>
+              <p class="advantage__description">более 10 собственный газовозов</p>
+            </div>
+
+            <div class="advantage">
+              <img class="advantage__image" src="/img/calc.png" alt="калькулятор">
+              <h3 class="advantage__title">Поставки напрямую <br> от производителей</h3>
+              <p class="advantage__description">нет наценки на стоимость газа как у <br> перекупщиков и небольших
+                частных <br> компаний</p>
+            </div>
+
+            <div class="advantage">
+              <img class="advantage__image" src="/img/baloon.png" alt="балон">
+              <h3 class="advantage__title">Любые объёмы поставки <br> качественного газа</h3>
+              <p class="advantage__description">вы получаете объем от 1 тонны до 20 <br> тонн, с сертификатом качества
+                газа
+              </p>
+            </div>
+
+            <div class="advantage">
+              <img class="advantage__image" src="/img/cards.png" alt="карты">
+              <h3 class="advantage__title">Оплата удобным <br> для вас способом</h3>
+              <p class="advantage__description">все газовозы оснащены терминалами для <br> оплаты вашего заказа</p>
+            </div>
+
+            <div class="advantage">
+              <img class="advantage__image" src="/img/tank.png" alt="капля">
+              <h3 class="advantage__title">Чистый газ <br> без примесей</h3>
+              <p class="advantage__description">нет наценки на стоимость газа как у <br> перекупщиков и небольших
+                частных <br> компаний
+              </p>
+            </div>
+
+            <div class="advantage">
+              <img class="advantage__image" src="/img/50m.png" alt="метр">
+              <h3 class="advantage__title">Длина заправочных <br> рукавов — 50 метров</h3>
+              <p class="advantage__description">не требуется подъезд автомобиля <br> вплотную к резервуару</p>
+            </div>
+
+            <div class="advantage">
+              <img class="advantage__image" src="/img/timer.png" alt="таймер">
+              <h3 class="advantage__title">Доставка сжиженного газа <br> в формате 24/7</h3>
+              <p class="advantage__description">привезем газ в удобное для вас время <br> или же по графику</p>
+            </div>
+
+            <div class="advantage">
+              <img class="advantage__image" src="/img/sert.png" alt="сертификат">
+              <h3 class="advantage__title">Аттестованный <br> персонал</h3>
+              <p class="advantage__description">квалифицированные сотрудники <br> проведут полную консультацию и дадут
+                <br> рекомендации, если такие нужны будут
+              </p>
+            </div>
+
+          </div>
+
+          <!-- CONCLUSION -->
+
+          <div class="conclusion">
+            <h2 class="conclusion__text">Благодаря нашему собственному автопарку мы можем давать гарантию, что доставим
+              <b class="conclusion__text__accent"> за 4 часа</b>
+            </h2>
+            <p class="conclusion__comment">Это сильное конкурентное преимущество, которым мы дорожим</p>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- SECTION SELECT VOLUME -->
+
+      <section class="section container section-select-volume">
+        <h2 class="section__title">Выберите свой объём Газовоза</h2>
+        <div class="section__content">
+
+          <div class="volumes-container">
+            <a href="#" class="volume volume-active">
+              <span class="volume__text">Малый <br> 2000 л.</span>
+            </a>
+            <a href="#" class="volume">
+              <span class="volume__text">Средний <br> 6000 л.</span>
+            </a>
+            <a href="#" class="volume">
+              <span class="volume__text">Стандартный <br> 10 000 л.</span>
+            </a>
+            <a href="#" class="volume">
+              <span class="volume__text">Оптовый <br> 40 000 л.</span>
+            </a>
+          </div>
+
+          <img class="img-gas-carrier" src="/img/gas_carrier.png" alt="газовоз">
+
+          <a href="#" class="button button-order">
+            <span class="button__text">Заказать газ</span>
+          </a>
+
+        </div>
+
+      </section>
+
+      <!-- SECTION REVIEWS -->
+
+      <section class="section container section-reviews">
+        <h2 class="section__title">Отзывы наших клиентов</h2>
+        <div class="section__content">
+
+          <div class="slider">
+            <img class="slider__arrow" src="/img/ic_arrow_left.svg" alt="стрелка влево">
+            <div class="first-card">
+              <div class="second-card">
+                <div class="third-card">
+                  <img class="third-card__image" src="/img/olga.png" alt="Ольга И.">
+                  <div class="third-card__content">
+                    <h2 class="third-card__content__name">Ольга И.</h2>
+                    <p class="third-card__content__city">Красногорск</p>
+                    <p class="third-card__content__comment">
+                      Я всегда боюсь газа , а особенно боюсь что он может взорваться, как же мне помог Андрей
+                      водитель-экспедитор показал что бояться тут нечего и самое главное моего присутствие даже не
+                      понадобится. Спасибо компании за то что они все закрыли этот вопрос под ключ.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <img class="slider__arrow" src="/img/ic_arrow_right.svg" alt="стрелка вправо">
+          </div>
+
+          <div class="dotnav">
+            <a href="#" class="dot dot-active"></a>
+            <a href="#" class="dot"></a>
+            <a href="#" class="dot"></a>
+            <a href="#" class="dot"></a>
+            <a href="#" class="dot"></a>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- SECTION FAQ -->
+
+      <section class="section container ">
+        <h2 class="section__title">Ответы на часто задаваемые вопросы</h2>
+        <div class="section__content">
+
+          <hr class="question-delimiter">
+
+          <details class="question-container">
+            <summary class="question">
+              <svg class="question__arrow" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M6.87698 0.96169C6.86635 1.02716 6.86145 1.09341 6.86231 1.1597L6.86231 12.4474L6.74783 12.2013C6.63396 11.9607 6.47898 11.7418 6.28991 11.5544L3.12456 8.3891C2.72661 7.97221 2.08642 7.90217 1.60772 8.2231C1.0976 8.59663 0.986845 9.31294 1.36037 9.82309C1.39056 9.8643 1.42348 9.90348 1.45889 9.94029L7.18285 15.6642C7.62968 16.1116 8.35451 16.112 8.80184 15.6651C8.80212 15.6649 8.80244 15.6645 8.80273 15.6642L14.5267 9.94029C14.9731 9.4926 14.9721 8.76777 14.5244 8.3213C14.4892 8.28617 14.4517 8.25337 14.4122 8.2231C13.9335 7.90217 13.2933 7.97221 12.8954 8.3891L9.72429 11.5487C9.55615 11.7167 9.41516 11.9098 9.30644 12.1211L9.15189 12.4646L9.15189 1.2227C9.17361 0.637892 8.7651 0.124811 8.19027 0.0149466C7.56618 -0.0862601 6.97822 0.337599 6.87698 0.96169Z" />
+              </svg>
+
+              <span class="question__text">Есть ли у вас инженеры в компании?</span>
+            </summary>
+            <p class="answer">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, reprehenderit.</p>
+          </details>
+
+          <hr class="question-delimiter">
+
+          <details class="question-container">
+            <summary class="question">
+              <svg class="question__arrow" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M6.87698 0.96169C6.86635 1.02716 6.86145 1.09341 6.86231 1.1597L6.86231 12.4474L6.74783 12.2013C6.63396 11.9607 6.47898 11.7418 6.28991 11.5544L3.12456 8.3891C2.72661 7.97221 2.08642 7.90217 1.60772 8.2231C1.0976 8.59663 0.986845 9.31294 1.36037 9.82309C1.39056 9.8643 1.42348 9.90348 1.45889 9.94029L7.18285 15.6642C7.62968 16.1116 8.35451 16.112 8.80184 15.6651C8.80212 15.6649 8.80244 15.6645 8.80273 15.6642L14.5267 9.94029C14.9731 9.4926 14.9721 8.76777 14.5244 8.3213C14.4892 8.28617 14.4517 8.25337 14.4122 8.2231C13.9335 7.90217 13.2933 7.97221 12.8954 8.3891L9.72429 11.5487C9.55615 11.7167 9.41516 11.9098 9.30644 12.1211L9.15189 12.4646L9.15189 1.2227C9.17361 0.637892 8.7651 0.124811 8.19027 0.0149466C7.56618 -0.0862601 6.97822 0.337599 6.87698 0.96169Z" />
+              </svg>
+
+              <span class="question__text">Делаете ли вы отчистку газгольдера?</span>
+            </summary>
+            <p class="answer">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, reprehenderit.</p>
+          </details>
+
+          <hr class="question-delimiter">
+
+          <details class="question-container" open>
+            <summary class="question">
+              <svg class="question__arrow" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M6.87698 0.96169C6.86635 1.02716 6.86145 1.09341 6.86231 1.1597L6.86231 12.4474L6.74783 12.2013C6.63396 11.9607 6.47898 11.7418 6.28991 11.5544L3.12456 8.3891C2.72661 7.97221 2.08642 7.90217 1.60772 8.2231C1.0976 8.59663 0.986845 9.31294 1.36037 9.82309C1.39056 9.8643 1.42348 9.90348 1.45889 9.94029L7.18285 15.6642C7.62968 16.1116 8.35451 16.112 8.80184 15.6651C8.80212 15.6649 8.80244 15.6645 8.80273 15.6642L14.5267 9.94029C14.9731 9.4926 14.9721 8.76777 14.5244 8.3213C14.4892 8.28617 14.4517 8.25337 14.4122 8.2231C13.9335 7.90217 13.2933 7.97221 12.8954 8.3891L9.72429 11.5487C9.55615 11.7167 9.41516 11.9098 9.30644 12.1211L9.15189 12.4646L9.15189 1.2227C9.17361 0.637892 8.7651 0.124811 8.19027 0.0149466C7.56618 -0.0862601 6.97822 0.337599 6.87698 0.96169Z" />
+              </svg>
+
+              <span class="question__text">А вы не испортите газон у меня и соседей?</span>
+            </summary>
+            <p class="answer">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, reprehenderit.</p>
+          </details>
+
+          <hr class="question-delimiter">
+
+          <details class="question-container">
+            <summary class="question">
+              <svg class="question__arrow" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M6.87698 0.96169C6.86635 1.02716 6.86145 1.09341 6.86231 1.1597L6.86231 12.4474L6.74783 12.2013C6.63396 11.9607 6.47898 11.7418 6.28991 11.5544L3.12456 8.3891C2.72661 7.97221 2.08642 7.90217 1.60772 8.2231C1.0976 8.59663 0.986845 9.31294 1.36037 9.82309C1.39056 9.8643 1.42348 9.90348 1.45889 9.94029L7.18285 15.6642C7.62968 16.1116 8.35451 16.112 8.80184 15.6651C8.80212 15.6649 8.80244 15.6645 8.80273 15.6642L14.5267 9.94029C14.9731 9.4926 14.9721 8.76777 14.5244 8.3213C14.4892 8.28617 14.4517 8.25337 14.4122 8.2231C13.9335 7.90217 13.2933 7.97221 12.8954 8.3891L9.72429 11.5487C9.55615 11.7167 9.41516 11.9098 9.30644 12.1211L9.15189 12.4646L9.15189 1.2227C9.17361 0.637892 8.7651 0.124811 8.19027 0.0149466C7.56618 -0.0862601 6.97822 0.337599 6.87698 0.96169Z" />
+              </svg>
+
+              <span class="question__text">Вы предоставляете документы для субсидий?</span>
+            </summary>
+            <p class="answer">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, reprehenderit.</p>
+          </details>
+
+          <hr class="question-delimiter">
+          <details class="question-container">
+            <summary class="question">
+              <svg class="question__arrow" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M6.87698 0.96169C6.86635 1.02716 6.86145 1.09341 6.86231 1.1597L6.86231 12.4474L6.74783 12.2013C6.63396 11.9607 6.47898 11.7418 6.28991 11.5544L3.12456 8.3891C2.72661 7.97221 2.08642 7.90217 1.60772 8.2231C1.0976 8.59663 0.986845 9.31294 1.36037 9.82309C1.39056 9.8643 1.42348 9.90348 1.45889 9.94029L7.18285 15.6642C7.62968 16.1116 8.35451 16.112 8.80184 15.6651C8.80212 15.6649 8.80244 15.6645 8.80273 15.6642L14.5267 9.94029C14.9731 9.4926 14.9721 8.76777 14.5244 8.3213C14.4892 8.28617 14.4517 8.25337 14.4122 8.2231C13.9335 7.90217 13.2933 7.97221 12.8954 8.3891L9.72429 11.5487C9.55615 11.7167 9.41516 11.9098 9.30644 12.1211L9.15189 12.4646L9.15189 1.2227C9.17361 0.637892 8.7651 0.124811 8.19027 0.0149466C7.56618 -0.0862601 6.97822 0.337599 6.87698 0.96169Z" />
+              </svg>
+
+              <span class="question__text">Смогу ли я заказать во время праздников?</span>
+            </summary>
+            <p class="answer">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, reprehenderit.</p>
+          </details>
+
+          <hr class="question-delimiter">
+        </div>
+
+      </section>
+
+      <!-- SECTION ASK -->
+
+      <section class="section container section-ask">
+
+        <div class="section__content">
+          <h2 class="section__title">Не нашли ответа на свой вопрос задайте их нашему специалисту</h2>
+
+          <form action="#" class="form form-ask">
+            <input class="form__input" type="text" name="name" id="name" placeholder="ИМЯ">
+            <input class="form__input" type="tel" name="phone" id="phone" placeholder="ТЕЛЕФОН">
+            <textarea class="form__textarea" name="question" id="question" cols="30" rows="5"
+              placeholder="ВАШ ВОПРОС"></textarea>
+            <button class="form__button simple-button" type="submit">Задать вопрос</button>
+          </form>
+        </div>
+
+        <div class="manager">
+          <img class="manager-image" src="/img/roman.png" alt="Роман Ш.">
+          <div class="info">
+            <h2 class="info__name">Роман Ш.</h2>
+            <p class="info__job-title">Старший менеджер</p>
           </div>
         </div>
-        <h1 class="title">Доставим газ за 4 часа</h1>
-        <p class="title_description">в любую точку Москвы и Московской области</p>
-        <div class="button-deleviry-container">
-          <a class="button-deleviry" href="#">Заказать доставку газа в газгольдер</a>
-          <p class="button-deleviry-description">Доставка газа всегда по актальным ценам</p>
-        </div>
+
       </section>
 
     </main>
@@ -66,10 +404,56 @@
     <!-- FOOTER -->
 
     <footer class="footer container">
+      <div class="partners-container">
+        <div class="partner">
+          <img class="partner__logo" src="/img/rosneft.png" alt="Роснефть">
+        </div>
+        <div class="partner">
+          <img class="partner__logo" src="/img/bashneft.png" alt="Башнефть">
+        </div>
+        <div class="partner">
+          <img class="partner__logo" src="/img/transneft.png" alt="Транснефть">
+        </div>
+        <div class="partner">
+          <img class="partner__logo" src="/img/gasprom.png" alt="Газпром">
+        </div>
+        <div class="partner">
+          <img class="partner__logo" src="/img/lukoil.png" alt="Лукоил">
+        </div>
+        <div class="partner">
+          <img class="partner__logo" src="/img/tatneft.png" alt="Татнефть">
+        </div>
+      </div>
 
-      <a href="#">Политика конфеденциальности</a>
-      <a href="#">Согласие на обработку персональных данных</a>
+      <h2 class="order-gas-title">Закажи прямо сейчас и получи бесплатную установку телеметрии</h2>
+      <a href="#" class="button button-order">
+        <span class="button__text">Заказать газ</span>
+      </a>
 
+      <div class="footer__contacts">
+        <div class="footer__contacts__content">
+          <h2 class="footer__contacts__title">Посетите наш уютный офис</h2>
+          <p class="footer__contacts__subtitle">где мы сможем вас полностью
+            проконсультировать по всем вопросам</p>
+
+          <hr class="contacts-delimiter">
+
+          <p class="contact">Офис</p>
+          <a class="contact-value" href="#">Видное , Белокаменное шоссе, 20</a>
+
+          <p class="contact">Телефон:</p>
+          <a class="contact-value" href="#">+7 926 330-68-34</a>
+        </div>
+        <div class="footer__contacts__image">
+          <img src="/img/map.png" alt="Карта">
+        </div>
+
+      </div>
+
+      <div class="link-container">
+        <a class="footer__link" href="#">Политика конфеденциальности</a>
+        <a class="footer__link" href="#">Согласие на обработку персональных данных</a>
+      </div>
     </footer>
   </div>
 </body>
