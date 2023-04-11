@@ -160,8 +160,8 @@ h3 {
 }
 
 .header-bottom {
-	background: url('../img/header_track.png') right no-repeat,
-		url('../img/dashed_arrow.svg') 38% 65% no-repeat;
+	background: url('./img/header_track.png') right no-repeat,
+		url('./img/dashed_arrow.svg') 38% 65% no-repeat;
 }
 
 .main {
@@ -241,8 +241,8 @@ h3 {
 }
 
 .button-delivery {
-	background: url('../img/btn_bottom.svg') calc(100% - 8px) calc(100% - 8px) no-repeat,
-		url('../img/btn_top.svg') 8px 8px no-repeat,
+	background: url('./img/btn_bottom.svg') calc(100% - 8px) calc(100% - 8px) no-repeat,
+		url('./img/btn_top.svg') 8px 8px no-repeat,
 		var(--color-primary);
 	height: 90px;
 	width: 400px;
@@ -259,7 +259,7 @@ h3 {
 }
 
 .price-section {
-	background: url('../img/section_price_track.png') 45% 90% no-repeat;
+	background: url('./img/section_price_track.png') 45% 90% no-repeat;
 	position: relative;
 }
 
@@ -337,7 +337,7 @@ h3 {
 }
 
 .section-advantages {
-	background: url('../img/section_advantage_track.png') 30% 100% no-repeat;
+	background: url('./img/section_advantage_track.png') 30% 100% no-repeat;
 }
 
 .section-advantages .section__content {
@@ -442,8 +442,8 @@ h3 {
 	width: 300px;
 	height: 100px;
 	background-size: 350px;
-	background: url('../img/order_btn_bottom.svg') calc(100% - 5px) calc(100% - 5px) no-repeat,
-		url('../img/order_btn_top.svg') 5px 5px no-repeat,
+	background: url('./img/order_btn_bottom.svg') calc(100% - 5px) calc(100% - 5px) no-repeat,
+		url('./img/order_btn_top.svg') 5px 5px no-repeat,
 		var(--color-primary);
 }
 
