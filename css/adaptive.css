@@ -1,19 +1,369 @@
 @media (min-width: 1024px) {
 
+  :root {
+    --page-width: 1135px;
+  }
+
+  .logo-description {
+    width: 125px;
+  }
+
+  .header-bottom {
+    background: url('/img/header_track.png') right no-repeat,
+      url('/img/dashed_arrow.svg') 38% 65% no-repeat;
+  }
+
+  .title {
+    width: 450px;
+  }
+
+  .subtitle {
+    width: 300px;
+  }
+
+  .advantage:nth-child(3n+2) {
+    position: relative;
+    top: 50px;
+  }
+
+  .button-delivery-container {
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button-delivery {
+    background: url('/img/btn_bottom.svg') calc(100% - 8px) calc(100% - 8px) no-repeat,
+      url('/img/btn_top.svg') 8px 8px no-repeat,
+      var(--color-primary);
+    height: 90px;
+    width: 400px;
+  }
+
+  .button-delivery .button__text {
+    width: 300px;
+  }
+
+  .button-delivery-description {
+    margin: 15px 0 0 0;
+    font-weight: 600;
+    line-height: 22px;
+  }
+
+  .price-section {
+    background: url('/img/section_price_track.png') 45% 90% no-repeat;
+  }
+
+  /* TODO: move */
+  .price-section .section__content {
+    display: flex;
+    gap: 150px;
+    margin-top: 62px;
+  }
+
+  .price-card-propane .price-card__description,
+  .price-card-butane .price-card__description {
+    width: 250px;
+  }
+
+  /* TODO: move */
+  .card-ratios {
+    top: -30px;
+  }
+
+  .section-advantages {
+    background: url('/img/section_advantage_track.png') 30% 100% no-repeat;
+  }
+
+  .advantages-container {
+    justify-content: space-between;
+  }
+
+  .advantage:nth-child(3n+2) {
+    position: relative;
+    top: 50px;
+  }
+
+  .advantage {
+    width: 350px;
+  }
+
+
+  .conclusion {
+    width: 550px;
+  }
+
+
+  .volume {
+    width: 150px;
+  }
+
+  .button-order {
+    width: 300px;
+    height: 100px;
+    background-size: 350px;
+    background: url('/img/order_btn_bottom.svg') calc(100% - 5px) calc(100% - 5px) no-repeat,
+      url('/img/order_btn_top.svg') 5px 5px no-repeat,
+      var(--color-primary);
+  }
+
+
+  .first-card {
+    width: 840px;
+    height: 250px;
+  }
+
+  .second-card {
+    width: 800px;
+    height: 290px;
+  }
+
+  .third-card {
+    width: 760px;
+    height: 320px;
+  }
+
+
+  .third-card__content__comment {
+    width: 328px;
+  }
+
+  .section-ask .section__title {
+    width: 500px;
+  }
+
+  .form {
+    width: 400px;
+  }
+
+
+  .partner {
+    background: var(--color-text);
+    width: 170px;
+    height: 70px;
+  }
+
+  .order-gas-title {
+    width: 700px;
+  }
+
+
+  .footer__contacts__content {
+    padding: 40px;
+  }
+
+  .footer__contacts__title {
+    width: 300px;
+  }
 }
 
 @media (max-width: 1024px) {
+  :root {
+    --page-width: 800px;
+  }
 
+  .logo-description {
+    width: 125px;
+  }
+
+  .header-top {
+    align-items: end;
+  }
+
+  .header-bottom {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('/img/header_track.png') -100% 60% no-repeat;
+  }
+
+  .qualities-container {
+    order: 1;
+  }
+
+  .button-delivery-container {
+    order: 2;
+    margin-top: 500px;
+  }
+
+  .title {
+    /* width: 450px; */
+  }
+
+  .subtitle {
+    /* width: 300px; */
+  }
+
+  .button-delivery-container {
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button-delivery {
+    background: url('/img/btn_bottom.svg') calc(100% - 8px) calc(100% - 8px) no-repeat,
+      url('/img/btn_top.svg') 8px 8px no-repeat,
+      var(--color-primary);
+    height: 90px;
+    width: 400px;
+  }
+
+  .button-delivery .button__text {
+    width: 300px;
+  }
+
+  .button-delivery-description {
+    margin: 15px 0 0 0;
+    font-weight: 600;
+    line-height: 22px;
+  }
+
+  .card-ratios {
+    display: none;
+  }
+
+  .price-section {}
+
+  /* TODO: move */
+  .price-section .section__content {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 150px;
+    margin-top: 62px;
+  }
+
+  .price-card-propane .price-card__description,
+  .price-card-butane .price-card__description {
+    width: 250px;
+  }
+
+  /* TODO: move */
+  .card-ratios {
+    top: -30px;
+  }
+
+
+
+
+
+  .advantages-container {
+    justify-content: space-around;
+  }
+
+  .advantage {
+    width: 350px;
+  }
+
+  .volume {
+    width: 150px;
+  }
+
+  .button-order {
+    width: 300px;
+    height: 100px;
+    background-size: 350px;
+    background: url('/img/order_btn_bottom.svg') calc(100% - 5px) calc(100% - 5px) no-repeat,
+      url('/img/order_btn_top.svg') 5px 5px no-repeat,
+      var(--color-primary);
+  }
+
+  .third-card__content__comment {
+    width: 328px;
+  }
+
+  .section-ask .section__title {
+    width: 500px;
+  }
+
+  .form {
+    width: 400px;
+  }
+
+
+  .partner {
+    background: var(--color-text);
+    width: 170px;
+    height: 70px;
+  }
+
+  .order-gas-title {
+    width: 700px;
+  }
+
+
+  .footer__contacts__content {
+    padding: 40px;
+  }
+
+
+
+  .map {
+    width: 100%;
+    border-radius: 30px;
+  }
+
+  .footer__contacts {
+    flex-wrap: wrap-reverse;
+  }
+
+  .section-advantages .section__content {
+    align-items: center;
+  }
+
+  .section-advantages {
+    background: url('/img/section_advantage_track.png') 60% 97% no-repeat;
+  }
+
+  .conclusion {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 300px;
+    width: 750px;
+  }
+
+  .footer__contacts__image {
+    padding: 40px 40px 0 40px;
+  }
+
+  .footer__contacts__title {
+    text-align: center;
+    width: 100%;
+  }
+
+  .conclusion__comment {
+    margin: 0 auto;
+  }
+
+  .partners-container {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .first-card {
+    width: 740px;
+    height: 230px;
+  }
+
+  .second-card {
+    width: 700px;
+    height: 270px;
+  }
+
+  .third-card {
+    width: 660px;
+    height: 300px;
+  }
+
+  .slider__arrow {
+    display: none;
+  }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 900px) {}
 
-}
+@media (max-width: 700px) {}
 
-@media (max-width: 700px) {
-
-}
-
-@media (max-width: 320px) {
-
-}
+@media (max-width: 320px) {}

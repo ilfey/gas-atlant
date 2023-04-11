@@ -159,11 +159,6 @@ h3 {
 	line-height: 22px;
 }
 
-.header-bottom {
-	background: url('./img/header_track.png') right no-repeat,
-		url('./img/dashed_arrow.svg') 38% 65% no-repeat;
-}
-
 .main {
 	flex: 1 1 auto;
 }
@@ -202,13 +197,11 @@ h3 {
 	font-size: 4rem;
 	font-family: 'Russo One';
 	line-height: 63px;
-	width: 450px;
 	color: var(--color-primary);
 }
 
 .subtitle {
 	margin-top: 14px;
-	width: 300px;
 }
 
 .button {
@@ -241,8 +234,8 @@ h3 {
 }
 
 .button-delivery {
-	background: url('./img/btn_bottom.svg') calc(100% - 8px) calc(100% - 8px) no-repeat,
-		url('./img/btn_top.svg') 8px 8px no-repeat,
+	background: url('/img/btn_bottom.svg') calc(100% - 8px) calc(100% - 8px) no-repeat,
+		url('/img/btn_top.svg') 8px 8px no-repeat,
 		var(--color-primary);
 	height: 90px;
 	width: 400px;
@@ -259,7 +252,7 @@ h3 {
 }
 
 .price-section {
-	background: url('./img/section_price_track.png') 45% 90% no-repeat;
+
 	position: relative;
 }
 
@@ -336,9 +329,6 @@ h3 {
 	opacity: 0.3;
 }
 
-.section-advantages {
-	background: url('./img/section_advantage_track.png') 30% 100% no-repeat;
-}
 
 .section-advantages .section__content {
 	display: flex;
@@ -350,13 +340,7 @@ h3 {
 .advantages-container {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
 	row-gap: 50px;
-}
-
-.advantage:nth-child(3n+2) {
-	position: relative;
-	top: 50px;
 }
 
 .advantage {
@@ -442,8 +426,8 @@ h3 {
 	width: 300px;
 	height: 100px;
 	background-size: 350px;
-	background: url('./img/order_btn_bottom.svg') calc(100% - 5px) calc(100% - 5px) no-repeat,
-		url('./img/order_btn_top.svg') 5px 5px no-repeat,
+	background: url('/img/order_btn_bottom.svg') calc(100% - 5px) calc(100% - 5px) no-repeat,
+		url('/img/order_btn_top.svg') 5px 5px no-repeat,
 		var(--color-primary);
 }
 
@@ -657,7 +641,12 @@ h3 {
 	margin-top: 40px;
 	background: var(--color-text);
 	display: flex;
+	justify-content: center;
 	border-radius: 33px;
+}
+
+.footer__contacts__image {
+	width: 100%;
 }
 
 .footer__contacts__content {
@@ -681,11 +670,15 @@ h3 {
 }
 
 .contact {
+	margin-top: 32px;
 	color: var(--color-primary);
 	text-transform: uppercase;
 }
 
 .contact-value {
+	display: block;
+	text-decoration: none;
+	margin-top: 5px;
 	color: #1B2639;
 }
 
