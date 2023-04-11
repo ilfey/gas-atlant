@@ -101,7 +101,6 @@ h3 {
 	color: var(--color-text);
 }
 
-
 .wrapper {
 	min-height: 100%;
 	display: flex;
@@ -208,7 +207,6 @@ h3 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
 	box-shadow: inset 0px 4px 12px rgba(0, 0, 0, 0.45);
 	border-radius: 11px;
 	margin: 40px 0 0 0;
@@ -234,8 +232,8 @@ h3 {
 }
 
 .button-delivery {
-	background: url('/img/btn_bottom.svg') calc(100% - 8px) calc(100% - 8px) no-repeat,
-		url('/img/btn_top.svg') 8px 8px no-repeat,
+	background: url('../img/btn_bottom.svg') calc(100% - 8px) calc(100% - 8px) no-repeat,
+		url('../img/btn_top.svg') 8px 8px no-repeat,
 		var(--color-primary);
 	height: 90px;
 	width: 400px;
@@ -426,8 +424,8 @@ h3 {
 	width: 300px;
 	height: 100px;
 	background-size: 350px;
-	background: url('/img/order_btn_bottom.svg') calc(100% - 5px) calc(100% - 5px) no-repeat,
-		url('/img/order_btn_top.svg') 5px 5px no-repeat,
+	background: url('../img/order_btn_bottom.svg') calc(100% - 5px) calc(100% - 5px) no-repeat,
+		url('../img/order_btn_top.svg') 5px 5px no-repeat,
 		var(--color-primary);
 }
 
@@ -535,6 +533,8 @@ h3 {
 
 .question {
 	list-style: none;
+	display: flex;
+	align-items: center;
 	padding: 24px 32px;
 }
 
@@ -562,6 +562,7 @@ h3 {
 .link-container {
 	margin-top: 40px;
 	display: flex;
+	gap: 50px;
 	justify-content: space-between;
 }
 
@@ -684,4 +685,55 @@ h3 {
 
 .footer__link {
 	color: var(--color-text);
+	text-align: center
+	;
+}
+
+.menu {
+	background: var(--color-background);
+	display: none;
+	position: absolute;
+	padding: 32px;
+	height: fit-content;
+	width: 100vw;
+	top: 0;
+	left: 0;
+	flex-direction: column;
+	align-items: center;
+	gap: 25px;
+	list-style: none;
+	text-align: center;
+}
+
+.burger {
+	display: none;
+	height: 1px;
+	width: 30px;
+	background-color: var(--color-text);
+	margin-bottom: 15px;
+}
+
+.burger::before, .burger::after {
+	position: relative;
+	display: block;
+	content: '';
+	height: 1px;
+	width: 30px;
+	background-color: var(--color-text);
+	left: 0;
+}
+
+.burger::before {
+	bottom: 8px;
+}
+.burger::after {
+	top: 8px;
+}
+
+
+.menu__link .phone,
+.menu__link .link {
+	width: 100%;
+	display: block;
+	text-align: center;
 }
